@@ -1,0 +1,24 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: UTF-8 #编码
+    suffix: .html #模板后缀
+    mode: HTML #模板
+  #redis:
+  #  port: 6379
+  #  host: localhost
+  #  timeout: 5000
+  #  lettuce:
+  #    pool:
+  #      max-active: 8
+  #      min-idle: 2
+  #      max-idle: 8
+
+# redis处理多im实例配置
+business:
+  redis:
+    topic: topic1
+app:
+  netty:
+    port: 8000
